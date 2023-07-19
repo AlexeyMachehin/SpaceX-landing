@@ -1,3 +1,9 @@
+* {
+  font-family: 'MuseoSansCyrl100', sans-serif;
+  font-size: 16px;
+  color: var(--font-color-1);
+}
+
 #root {
   height: 100%;
   width: 100%;
@@ -6,4 +12,10 @@
 .App {
   height: 100%;
   width: 100%;
+}
+
+.container {
+  width: 1190px;
+  padding: 0 20px;
+  /* border: 1px solid white; */
 }
