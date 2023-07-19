@@ -1,2 +1,10 @@
 @import url('./nullstyle.css');
 @import url('./variables.css');
+
+@font-face {
+  font-family: 'MuseoSansCyrl100';
+  src: local('MuseoSansCyrl100'),
+    url('/fonts/MuseoSansCyrl100.woff') format('woff'),
+    url('/fonts/MuseoSansCyrl300.woff') format('woff'),
+    url('/fonts/MuseoSansCyrl700.woff') format('woff');
+}
