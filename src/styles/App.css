@@ -4,6 +4,12 @@
   color: var(--font-color-1);
 }
 
+body {
+  background-image: url('/emptyBackground.png');
+  background-size: cover;
+  background-position: center;
+}
+
 #root {
   height: 100%;
   width: 100%;
@@ -19,3 +25,7 @@
   padding: 0 20px;
   /* border: 1px solid white; */
 }
+
+
+
+
