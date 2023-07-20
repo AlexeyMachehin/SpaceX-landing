@@ -4,7 +4,17 @@
 @font-face {
   font-family: 'MuseoSansCyrl100';
   src: local('MuseoSansCyrl100'),
-    url('/fonts/MuseoSansCyrl100.woff') format('woff'),
-    url('/fonts/MuseoSansCyrl300.woff') format('woff'),
-    url('/fonts/MuseoSansCyrl700.woff') format('woff');
+    url('src/fonts/MuseoSansCyrl100.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl300';
+  src: local('MuseoSansCyrl300'),
+    url('src/fonts/MuseoSansCyrl300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl700';
+  src: local('MuseoSansCyrl700'),
+    url('src/fonts/MuseoSansCyrl700.woff') format('woff');
 }
