@@ -1,12 +1,12 @@
 :root {
   --journey-text-uppercase-background-gradient: linear-gradient(
     to right,
-    var(--journey-text-background-gradient-start-color) 20%,
+    var(--journey-text-background-gradient-start-color),
     var(--journey-text-background-gradient-end-color)
   );
   --journey-text-lowercase-background-gradient: linear-gradient(
     to right,
-    var(--journey-text-background-gradient-start-color) 10%,
+    var(--journey-text-background-gradient-start-color),
     var(--journey-text-background-gradient-end-color)
   );
   --arrow-horizontal-background-gradient: linear-gradient(
@@ -108,5 +108,29 @@
     var(--card-background-border-gradient-start-color),
     75%,
     var(--card-background-border-gradient-end-color)
+  );
+  --start-journey-button-first-line-after-gradient: linear-gradient(
+    175deg,
+    var(--start-journey-button-border-gradient-start-color),
+    40%,
+    var(--start-journey-button-border-gradient-end-color)
+  );
+  --start-journey-button-first-line-before-gradient: linear-gradient(
+    270deg,
+    var(--start-journey-button-border-gradient-start-color),
+    40%,
+    var(--start-journey-button-border-gradient-end-color)
+  );
+  --start-journey-button-second-line-after-gradient: linear-gradient(
+    360deg,
+    var(--start-journey-button-border-gradient-start-color),
+    40%,
+    var(--start-journey-button-border-gradient-end-color)
+  );
+  --start-journey-button-second-line-before-gradient: linear-gradient(
+    90deg,
+    var(--start-journey-button-border-gradient-start-color),
+    40%,
+    var(--start-journey-button-border-gradient-end-color)
   );
 }

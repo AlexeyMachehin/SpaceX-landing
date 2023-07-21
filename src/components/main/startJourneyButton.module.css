@@ -101,7 +101,7 @@
   height: 1px;
   content: '';
   opacity: 0.8;
-  background-color: var(--start-journey-button-border-color);
+  background-color: var(--start-journey-button-border-gradient-end-color);
   transition: 0.3s all ease-out;
 }
 
@@ -123,39 +123,19 @@
 }
 
 .startJourneyButton .firstLine::after {
-  background: linear-gradient(
-    175deg,
-    rgb(255 255 255 / 0%) 0%,
-    40%,
-    var(--start-journey-button-border-color) 100%
-  );
+  background: var(--start-journey-button-first-line-after-gradient);
 }
 
 .startJourneyButton .firstLine::before {
-  background: linear-gradient(
-    270deg,
-    rgb(255 255 255 / 0%) 0%,
-    40%,
-    var(--start-journey-button-border-color) 100%
-  );
+  background: var(--start-journey-button-first-line-before-gradient);
 }
 
 .startJourneyButton .secondLine::after {
-  background: linear-gradient(
-    360deg,
-    rgb(255 255 255 / 0%) 0%,
-    40%,
-    var(--start-journey-button-border-color) 100%
-  );
+  background: var(--start-journey-button-second-line-after-gradient);
 }
 
 .startJourneyButton .secondLine::before {
-  background: linear-gradient(
-    90deg,
-    rgb(255 255 255 / 0%) 0%,
-    40%,
-    var(--start-journey-button-border-color) 100%
-  );
+  background: var(--start-journey-button-second-line-before-gradient);
 }
 
 .startJourneyButton:hover .firstLine::after,

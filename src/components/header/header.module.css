@@ -17,8 +17,8 @@
   align-items: center;
   width: 315px;
   height: 100px;
-  border: 1px solid var(--font-color-1);
-  background: transparent;
+  border: var(--logo-button-border);
+  background: var(--logo-button-background-color);
   transition: all 0.3s ease;
 }
 
@@ -37,7 +37,7 @@
   height: 80%;
   border-left: var(--general-border);
   border-right: var(--general-border);
-  background: transparent;
+  background: var(--logo-button-background-color);
   transition: height 0.3s;
 }
 
@@ -46,7 +46,7 @@
   width: 93%;
   border-top: var(--general-border);
   border-bottom: var(--general-border);
-  background: transparent;
+  background: var(--logo-button-background-color);
   transition: width 0.3s;
 }
 
