@@ -23,7 +23,7 @@
 .cardTextPrimary {
   margin-top: 30px;
   margin-bottom: 12px;
-  font-family: 'MuseoSansCyrl700', sans-serif;
+  font-family: var(--bold-font);
   font-weight: 700;
   font-size: 50px;
   line-height: 0.5;

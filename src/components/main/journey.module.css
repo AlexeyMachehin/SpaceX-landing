@@ -8,13 +8,13 @@
 
 .journeyTextUppercase {
   background: var(--journey-text-uppercase-background-gradient);
-  font-family: 'MuseoSansCyrl700', sans-serif;
+  font-family: var(--bold-font);
   font-size: 57px;
 }
 
 .journeyTextLowercase {
   background: var(--journey-text-lowercase-background-gradient);
-  font-family: 'MuseoSansCyrl300', sans-serif;
+  font-family: var(--regular-font);
   font-size: 23px;
   font-weight: 300;
 }
@@ -23,7 +23,7 @@
 .journeyTextLowercase {
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: var(--logo-button-background-color);
 }
 
 @media screen and (width <= 1107px) {

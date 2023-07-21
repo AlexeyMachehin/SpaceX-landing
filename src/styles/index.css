@@ -3,6 +3,7 @@
 @import url('./variables/borders.css');
 @import url('./variables/gradients.css');
 @import url('./variables/shadows.css');
+@import url('./variables/fonts.css');
 
 @font-face {
   font-family: 'MuseoSansCyrl100';

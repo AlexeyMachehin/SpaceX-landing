@@ -3,12 +3,14 @@
   --font-color-1: #fff;
   --font-color-2: #979797;
   --arrows-border-color: #fff;
+  --logo-button-background-color: transparent;
   --start-journey-button-shadow-color: #ffffffb3;
   --header-wrapper-background-color: #00000026;
   --card-text-primary-darkened-color: #bcbcbc;
   --card-hover-background-color: #bdbdbd1a;
   --start-journey-button-background-color: #0000006a;
-  --start-journey-button-border-color: #23599c;
+  --start-journey-button-border-gradient-start-color: #fff0;
+  --start-journey-button-border-gradient-end-color: #23599c;
   --dropdown-links-background-color: #081018de;
   --card-background-gradient-start-color: #0000;
   --card-background-gradient-end-color: #bdbdbd0d;

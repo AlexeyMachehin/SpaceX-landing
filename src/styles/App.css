@@ -1,5 +1,5 @@
 * {
-  font-family: 'MuseoSansCyrl100', sans-serif;
+  font-family: var(--light-font);
   font-size: 16px;
   color: var(--font-color-1);
 }
