@@ -4,10 +4,10 @@
   width: fit-content;
   align-self: flex-start;
   white-space: nowrap;
-  background-color: rgba(0, 0, 0, 0.418);
+  background-color: rgb(0 0 0 / 41.8%);
   font-size: 14px;
   font-weight: 100;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   transform: scaleX(-1);
 }
@@ -44,12 +44,12 @@
   width: 1px;
   height: 1px;
   content: '';
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .startJourneyButton .firstBorder::after {
   width: 7px;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px 2px rgb(255 255 255 / 70%);
 }
 
 .startJourneyButton .firstBorder::before {
@@ -57,12 +57,12 @@
   width: 1px;
   height: 7px;
   content: '';
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .startJourneyButton .secondBorder::after {
   width: 7px;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px 2px rgb(255 255 255 / 70%);
 }
 
 .startJourneyButton .secondBorder::before {
@@ -70,7 +70,7 @@
   width: 1px;
   height: 7px;
   content: '';
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .startJourneyButton:hover .firstBorder::after,
@@ -133,7 +133,7 @@
 .startJourneyButton .firstLine::after {
   background: linear-gradient(
     175deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     40%,
     #24599c 100%
   );
@@ -142,7 +142,7 @@
 .startJourneyButton .firstLine::before {
   background: linear-gradient(
     270deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     40%,
     #24599c 100%
   );
@@ -151,7 +151,7 @@
 .startJourneyButton .secondLine::after {
   background: linear-gradient(
     360deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     40%,
     #24599c 100%
   );
@@ -160,19 +160,19 @@
 .startJourneyButton .secondLine::before {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     40%,
     #24599c 100%
   );
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .startJourneyButton p {
     transform: scaleX(1);
   }
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (width <= 382px) {
   .startJourneyButton {
     padding: 5px;
   }

@@ -7,13 +7,13 @@
 }
 
 .journeyTextUppercase {
-  background: linear-gradient(to right, #ffffff 20%, #ff4005);
+  background: linear-gradient(to right, #fff 20%, #ff4005);
   font-family: 'MuseoSansCyrl700', sans-serif;
   font-size: 57px;
 }
 
 .journeyTextLowercase {
-  background: linear-gradient(to right, #ffffff, #ff4005);
+  background: linear-gradient(to right, #fff, #ff4005);
   font-family: 'MuseoSansCyrl300', sans-serif;
   font-size: 23px;
   font-weight: 300;
@@ -26,7 +26,7 @@
   color: transparent;
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .journey {
     top: 0;
     right: 0;
@@ -42,7 +42,7 @@
   }
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (width <= 614px) {
   .journeyTextUppercase {
     font-size: 40px;
   }
@@ -52,10 +52,11 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (width <= 480px) {
   .journeyTextUppercase {
     font-size: 32px;
   }
+
   .journeyTextLowercase {
     font-size: 14px;
   }

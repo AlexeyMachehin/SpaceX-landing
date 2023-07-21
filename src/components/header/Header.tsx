@@ -9,7 +9,7 @@ export function Header() {
           <button className={classes.logoButton}>
             <img
               className={classes.logo}
-              src="/spaceX-logo.png"
+              src="/spaceXLogo.png"
               alt="SpaceX-logo"
             />
           </button>

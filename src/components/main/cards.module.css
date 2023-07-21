@@ -36,32 +36,32 @@
 .bottomLeftCard {
   background: linear-gradient(
     45deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(189, 189, 189, 0.05) 100%
+    rgb(0 0 0 / 0%) 0%,
+    rgb(189 189 189 / 5%) 100%
   );
 }
 
 .topLeftCard {
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(189, 189, 189, 0.05) 100%
+    rgb(0 0 0 / 0%) 0%,
+    rgb(189 189 189 / 5%) 100%
   );
 }
 
 .topRightCard {
   background: linear-gradient(
     225deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(189, 189, 189, 0.05) 100%
+    rgb(0 0 0 / 0%) 0%,
+    rgb(189 189 189 / 5%) 100%
   );
 }
 
 .bottomRightCard {
   background: linear-gradient(
     320deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(189, 189, 189, 0.05) 100%
+    rgb(0 0 0 / 0%) 0%,
+    rgb(189 189 189 / 5%) 100%
   );
 }
 
@@ -70,32 +70,32 @@
 .bottomRightCard:hover {
   background: linear-gradient(
     320deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(189, 189, 189, 0.17) 100%
+    rgb(0 0 0 / 0%) 50%,
+    rgb(189 189 189 / 17%) 100%
   );
 }
 
 .topRightCard:hover {
   background: linear-gradient(
     225deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(189, 189, 189, 0.17) 100%
+    rgb(0 0 0 / 0%) 50%,
+    rgb(189 189 189 / 17%) 100%
   );
 }
 
 .topLeftCard:hover {
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(189, 189, 189, 0.17) 100%
+    rgb(0 0 0 / 0%) 50%,
+    rgb(189 189 189 / 17%) 100%
   );
 }
 
 .bottomLeftCard:hover {
   background: linear-gradient(
     45deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(189, 189, 189, 0.17) 100%
+    rgb(0 0 0 / 0%) 50%,
+    rgb(189 189 189 / 17%) 100%
   );
 }
 
@@ -155,76 +155,76 @@
 .bottomRightCard::after {
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(180, 180, 180, 0.5) 100%
+    rgb(180 180 180 / 50%) 100%
   );
 }
 
 .bottomRightCard::before {
   background: linear-gradient(
     270deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(180, 180, 180, 0.5) 100%
+    rgb(180 180 180 / 50%) 100%
   );
 }
 
 .topRightCard::after {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(180, 180, 180, 0.5) 100%
+    rgb(180 180 180 / 50%) 100%
   );
 }
 
 .topRightCard::before {
   background: linear-gradient(
     270deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(180, 180, 180, 0.5) 100%
+    rgb(180 180 180 / 50%) 100%
   );
 }
 
 .bottomLeftCard::after {
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(180, 180, 180, 0.5) 100%
+    rgb(180 180 180 / 50%) 100%
   );
 }
 
 .bottomLeftCard::before {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(180, 180, 180, 0.5) 100%
+    rgb(180 180 180 / 50%) 100%
   );
 }
 
 .topLeftCard::after {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(180, 180, 180, 0.5) 100%
+    rgb(180 180 180 / 50%) 100%
   );
 }
 
 .topLeftCard::before {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(180, 180, 180, 0.5) 100%
+    rgb(180 180 180 / 50%) 100%
   );
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .cards {
     top: 251px;
     right: 0;
@@ -237,7 +237,7 @@
   }
 
   .card:hover {
-    background: rgba(189, 189, 189, 0.1) 100%;
+    background: rgb(189 189 189 / 10%) 100%;
     transition: 0.3s all ease-in-out;
   }
 
@@ -265,13 +265,13 @@
   }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (width <= 725px) {
   .cards {
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (width <= 614px) {
   .card {
     width: 120px;
     height: 120px;
@@ -290,7 +290,7 @@
   }
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (width <= 382px) {
   .mainContent::after {
     top: -348px;
     left: -507px;

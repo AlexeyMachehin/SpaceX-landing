@@ -14,9 +14,9 @@
   height: 1px;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     75%,
-    rgba(255, 255, 255, 0.5) 100%
+    rgb(255 255 255 / 50%) 100%
   );
   transform: rotate(45deg);
   transition: 0.3s all ease-in;
@@ -31,9 +31,9 @@
   height: 1px;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.5) 0%,
+    rgb(255 255 255 / 50%) 0%,
     50%,
-    rgb(255, 255, 255) 100%
+    rgb(255 255 255) 100%
   );
   transition: 0.3s all ease-in;
 }
@@ -44,7 +44,7 @@
   height: 6px;
   width: 6px;
   content: '';
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   border-radius: 100%;
   background-color: transparent;
   transform: translateY(-50%);
@@ -61,7 +61,7 @@
   transform: translateY(-50%);
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .startJourney {
     top: 111px;
     left: 332px;
@@ -73,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (width <= 614px) {
   .startJourney {
     left: 233px;
   }
@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (width <= 480px) {
   .startJourney {
     left: 108px;
   }
@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (width <= 382px) {
   .startJourney {
     left: 97px;
   }
@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 265px) {
+@media screen and (width <= 265px) {
   .startJourney {
     left: 43px;
   }

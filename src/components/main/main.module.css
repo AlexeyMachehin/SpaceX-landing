@@ -36,7 +36,7 @@
   z-index: 3;
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .mainContent::after {
     top: -271px;
     left: -387px;
@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (width <= 614px) {
   .mainContent::after {
     top: -301px;
     left: -472px;
@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (width <= 382px) {
   .mainContent::after {
     top: -348px;
     left: -507px;
