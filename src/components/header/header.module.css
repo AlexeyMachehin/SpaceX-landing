@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   border: var(--general-border);
-  background-color: rgb(0 0 0 / 15.1%);
+  background-color: var(--header-wrapper-background-color);
 }
 
 .contentContainer {

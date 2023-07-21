@@ -1,5 +1,8 @@
 @import url('./nullstyle.css');
-@import url('./variables.css');
+@import url('./variables/colors.css');
+@import url('./variables/borders.css');
+@import url('./variables/gradients.css');
+@import url('./variables/shadows.css');
 
 @font-face {
   font-family: 'MuseoSansCyrl100';

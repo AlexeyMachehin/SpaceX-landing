@@ -34,73 +34,41 @@
 }
 
 .bottomLeftCard {
-  background: linear-gradient(
-    45deg,
-    rgb(0 0 0 / 0%) 0%,
-    rgb(189 189 189 / 5%) 100%
-  );
+  background: var(--bottom-left-card-gradient);
 }
 
 .topLeftCard {
-  background: linear-gradient(
-    135deg,
-    rgb(0 0 0 / 0%) 0%,
-    rgb(189 189 189 / 5%) 100%
-  );
+  background: var(--top-left-card-gradient);
 }
 
 .topRightCard {
-  background: linear-gradient(
-    225deg,
-    rgb(0 0 0 / 0%) 0%,
-    rgb(189 189 189 / 5%) 100%
-  );
+  background: var(--top-right-card-gradient);
 }
 
 .bottomRightCard {
-  background: linear-gradient(
-    320deg,
-    rgb(0 0 0 / 0%) 0%,
-    rgb(189 189 189 / 5%) 100%
-  );
+  background: var(--bottom-right-card-gradient);
 }
 
 /* animate card hover */
 
 .bottomRightCard:hover {
-  background: linear-gradient(
-    320deg,
-    rgb(0 0 0 / 0%) 50%,
-    rgb(189 189 189 / 17%) 100%
-  );
+  background: var(--bottom-right-card-hover-gradient);
 }
 
 .topRightCard:hover {
-  background: linear-gradient(
-    225deg,
-    rgb(0 0 0 / 0%) 50%,
-    rgb(189 189 189 / 17%) 100%
-  );
+  background: var(--top-right-card-hover-gradient);
 }
 
 .topLeftCard:hover {
-  background: linear-gradient(
-    135deg,
-    rgb(0 0 0 / 0%) 50%,
-    rgb(189 189 189 / 17%) 100%
-  );
+  background: var(--top-left-card-hover-gradient);
 }
 
 .bottomLeftCard:hover {
-  background: linear-gradient(
-    45deg,
-    rgb(0 0 0 / 0%) 50%,
-    rgb(189 189 189 / 17%) 100%
-  );
+  background: var(--bottom-left-card-hover-gradient);
 }
 
 .cardTextPrimaryDarkened {
-  color: #bcbcbc;
+  color: var(--card-text-primary-darkened-color);
 }
 
 .yearAbbreviation {
@@ -119,14 +87,7 @@
   height: 1px;
   width: 1px;
   opacity: 0;
-  background-color: #989393;
   transition: 0.3s all ease-out;
-}
-
-.card:hover::after,
-.card:hover::before {
-  opacity: 1;
-  transition: 0.3s all ease-in;
 }
 
 .card::after {
@@ -135,6 +96,12 @@
 
 .card::before {
   width: 100%;
+}
+
+.card:hover::after,
+.card:hover::before {
+  opacity: 1;
+  transition: 0.3s all ease-in;
 }
 
 .topLeftCard::after,
@@ -153,75 +120,35 @@
 }
 
 .bottomRightCard::after {
-  background: linear-gradient(
-    0deg,
-    rgb(255 255 255 / 0%) 0%,
-    75%,
-    rgb(180 180 180 / 50%) 100%
-  );
+  background: var(--card-bottom-right-background-border-after-gradient);
 }
 
 .bottomRightCard::before {
-  background: linear-gradient(
-    270deg,
-    rgb(255 255 255 / 0%) 0%,
-    75%,
-    rgb(180 180 180 / 50%) 100%
-  );
+  background: var(--card-bottom-right-background-border-before-gradient);
 }
 
 .topRightCard::after {
-  background: linear-gradient(
-    180deg,
-    rgb(255 255 255 / 0%) 0%,
-    75%,
-    rgb(180 180 180 / 50%) 100%
-  );
+  background: var(--card-top-right-background-border-after-gradient);
 }
 
 .topRightCard::before {
-  background: linear-gradient(
-    270deg,
-    rgb(255 255 255 / 0%) 0%,
-    75%,
-    rgb(180 180 180 / 50%) 100%
-  );
+  background: var(--card-top-right-background-border-before-gradient);
 }
 
 .bottomLeftCard::after {
-  background: linear-gradient(
-    0deg,
-    rgb(255 255 255 / 0%) 0%,
-    75%,
-    rgb(180 180 180 / 50%) 100%
-  );
+  background: var(--card-bottom-left-background-border-after-gradient);
 }
 
 .bottomLeftCard::before {
-  background: linear-gradient(
-    90deg,
-    rgb(255 255 255 / 0%) 0%,
-    75%,
-    rgb(180 180 180 / 50%) 100%
-  );
+  background: var(--card-bottom-left-background-border-before-gradient);
 }
 
 .topLeftCard::after {
-  background: linear-gradient(
-    180deg,
-    rgb(255 255 255 / 0%) 0%,
-    75%,
-    rgb(180 180 180 / 50%) 100%
-  );
+  background: var(--card-top-left-background-border-after-gradient);
 }
 
 .topLeftCard::before {
-  background: linear-gradient(
-    90deg,
-    rgb(255 255 255 / 0%) 0%,
-    75%,
-    rgb(180 180 180 / 50%) 100%
-  );
+  background: var(--card-top-left-background-border-before-gradient);
 }
 
 @media screen and (width <= 1107px) {
@@ -237,7 +164,7 @@
   }
 
   .card:hover {
-    background: rgb(189 189 189 / 10%) 100%;
+    background: var(--card-hover-background-color);
     transition: 0.3s all ease-in-out;
   }
 

@@ -7,13 +7,13 @@
 }
 
 .journeyTextUppercase {
-  background: linear-gradient(to right, #fff 20%, #ff4005);
+  background: var(--journey-text-uppercase-background-gradient);
   font-family: 'MuseoSansCyrl700', sans-serif;
   font-size: 57px;
 }
 
 .journeyTextLowercase {
-  background: linear-gradient(to right, #fff, #ff4005);
+  background: var(--journey-text-lowercase-background-gradient);
   font-family: 'MuseoSansCyrl300', sans-serif;
   font-size: 23px;
   font-weight: 300;

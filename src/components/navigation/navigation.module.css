@@ -64,12 +64,12 @@
 
 .dropdownLinksWrapper {
   padding: 5px;
-  background-color: #081018de;
+  background-color: var(--dropdown-links-background-color);
   border: var(--general-border);
 }
 
-.select:hover .dropdown,
-.dropdown:hover {
+.dropdown:hover,
+.select:hover .dropdown {
   display: block;
 }
 

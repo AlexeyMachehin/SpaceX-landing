@@ -4,10 +4,10 @@
   width: fit-content;
   align-self: flex-start;
   white-space: nowrap;
-  background-color: rgb(0 0 0 / 41.8%);
+  background-color: var(--start-journey-button-background-color);
   font-size: 14px;
   font-weight: 100;
-  color: #fff;
+  color: var(--font-color-1);
   cursor: pointer;
   transform: scaleX(-1);
 }
@@ -44,12 +44,12 @@
   width: 1px;
   height: 1px;
   content: '';
-  background-color: #fff;
+  background-color: var(--font-color-1);
 }
 
 .startJourneyButton .firstBorder::after {
   width: 7px;
-  box-shadow: 0 0 10px 2px rgb(255 255 255 / 70%);
+  box-shadow: var(--start-journey-button-shadow);
 }
 
 .startJourneyButton .firstBorder::before {
@@ -57,12 +57,12 @@
   width: 1px;
   height: 7px;
   content: '';
-  background-color: #fff;
+  background-color: var(--font-color-1);
 }
 
 .startJourneyButton .secondBorder::after {
   width: 7px;
-  box-shadow: 0 0 10px 2px rgb(255 255 255 / 70%);
+  box-shadow: var(--start-journey-button-shadow);
 }
 
 .startJourneyButton .secondBorder::before {
@@ -70,7 +70,7 @@
   width: 1px;
   height: 7px;
   content: '';
-  background-color: #fff;
+  background-color: var(--font-color-1);
 }
 
 .startJourneyButton:hover .firstBorder::after,
@@ -101,16 +101,8 @@
   height: 1px;
   content: '';
   opacity: 0.8;
-  background-color: #23599c;
+  background-color: var(--start-journey-button-border-color);
   transition: 0.3s all ease-out;
-}
-
-.startJourneyButton:hover .firstLine::after,
-.startJourneyButton:hover .firstLine::before,
-.startJourneyButton:hover .secondLine::after,
-.startJourneyButton:hover .secondLine::before {
-  opacity: 0;
-  transition: 0.3s all ease-in;
 }
 
 .startJourneyButton .firstLine::after,
@@ -135,7 +127,7 @@
     175deg,
     rgb(255 255 255 / 0%) 0%,
     40%,
-    #24599c 100%
+    var(--start-journey-button-border-color) 100%
   );
 }
 
@@ -144,7 +136,7 @@
     270deg,
     rgb(255 255 255 / 0%) 0%,
     40%,
-    #24599c 100%
+    var(--start-journey-button-border-color) 100%
   );
 }
 
@@ -153,7 +145,7 @@
     360deg,
     rgb(255 255 255 / 0%) 0%,
     40%,
-    #24599c 100%
+    var(--start-journey-button-border-color) 100%
   );
 }
 
@@ -162,8 +154,16 @@
     90deg,
     rgb(255 255 255 / 0%) 0%,
     40%,
-    #24599c 100%
+    var(--start-journey-button-border-color) 100%
   );
+}
+
+.startJourneyButton:hover .firstLine::after,
+.startJourneyButton:hover .firstLine::before,
+.startJourneyButton:hover .secondLine::after,
+.startJourneyButton:hover .secondLine::before {
+  opacity: 0;
+  transition: 0.3s all ease-in;
 }
 
 @media screen and (width <= 1107px) {
