@@ -45,14 +45,15 @@
 ***
 
 Превью:
-![image](https://github.com/AlexeyMachehin/SpaceX-landing/assets/99137228/5e388657-cb97-4222-ae1a-8a2e620c88b4)
+![image](https://github.com/AlexeyMachehin/SpaceX-landing/assets/99137228/bb1dfc1c-a671-4b4e-9906-722b6f5e235c)
 
 ***
 
-![image](https://github.com/AlexeyMachehin/SpaceX-landing/assets/99137228/6f4f7821-829b-4c1e-adbd-5cdf682277c7)
+![image](https://github.com/AlexeyMachehin/SpaceX-landing/assets/99137228/f9532a48-978a-465d-ae18-0a1387900995)
 
 ***
 
-![image](https://github.com/AlexeyMachehin/SpaceX-landing/assets/99137228/bdb405e7-aea6-4f7c-991e-709148c91d27)
+![image](https://github.com/AlexeyMachehin/SpaceX-landing/assets/99137228/6d8b718d-d0ea-4b62-99db-db09a010c7f9)
+
 
 
