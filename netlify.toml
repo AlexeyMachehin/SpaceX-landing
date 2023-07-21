@@ -7,7 +7,7 @@
   NODE_VERSION = "18.16.1"
 
 [[headers]]
-  for = "/*.woff"
+  for = ".src/*.woff"
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Content-Type = "application/font-woff"  
