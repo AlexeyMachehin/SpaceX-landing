@@ -1,4 +1,8 @@
 import classes from './main.module.css';
+import classesStartJourney from './startJourney.module.css';
+import classesStartJourneyButton from './startJourneyButton.module.css';
+import classesJourney from './journey.module.css';
+import classesCards from './cards.module.css';
 
 export function Main() {
   return (
@@ -6,54 +10,60 @@ export function Main() {
       <div className="container">
         <div className={classes.mainContentWrapper}>
           <div className={classes.mainContent}>
-            <div className={classes.journey}>
-              <span className={classes.journeyUppercase}>ПУТЕШЕСТВИЕ</span>
-              <span className={classes.journeyLowercase}>
+            <div className={classesJourney.journey}>
+              <span className={classesJourney.journeyUppercase}>
+                ПУТЕШЕСТВИЕ
+              </span>
+              <span className={classesJourney.journeyLowercase}>
                 на красную планету
               </span>
             </div>
 
-            <div className={classes.cards}>
-              <div className={`${classes.card} ${classes.rightBottomGradient}`}>
-                <span className={classes.cardTextSecondary}>мы</span>
-                <span className={classes.cardTextPrimary}>1</span>
-                <span className={classes.cardTextSecondary}>на рынке</span>
+            <div className={classesCards.cards}>
+              <div className={`${classesCards.card} ${classesCards.rightBottomGradient}`}>
+                <span className={classesCards.cardTextSecondary}>мы</span>
+                <span className={classesCards.cardTextPrimary}>1</span>
+                <span className={classesCards.cardTextSecondary}>на рынке</span>
               </div>
-              <div className={`${classes.card} ${classes.leftBottomGradient}`}>
-                <span className={classes.cardTextSecondary}>гарантируем</span>
+
+              <div className={`${classesCards.card} ${classesCards.leftBottomGradient}`}>
+                <span className={classesCards.cardTextSecondary}>гарантируем</span>
                 <span
-                  className={`${classes.cardTextPrimary} ${classes.cardTextPrimaryGrey}`}>
+                  className={`${classesCards.cardTextPrimary} ${classesCards.cardTextPrimaryGrey}`}>
                   50%
                 </span>
-                <span className={classes.cardTextSecondary}>безопасность</span>
+                <span className={classesCards.cardTextSecondary}>безопасность</span>
               </div>
-              <div className={`${classes.card} ${classes.rightTopGradient}`}>
-                <span className={classes.cardTextSecondary}>календарик за</span>
-                <span className={classes.cardTextPrimary}>2001Г.</span>
-                <span className={classes.cardTextSecondary}>в подарок</span>
+
+              <div className={`${classesCards.card} ${classesCards.rightTopGradient}`}>
+                <span className={classesCards.cardTextSecondary}>календарик за</span>
+                <span className={classesCards.cardTextPrimary}>
+                  2001<span className={classesCards.yearAbbreviation}>Г.</span>
+                </span>
+                <span className={classesCards.cardTextSecondary}>в подарок</span>
               </div>
-              <div className={`${classes.card} ${classes.leftTopGradient}`}>
-                <span className={classes.cardTextSecondary}>путешествие</span>
+
+              <div className={`${classesCards.card} ${classesCards.leftTopGradient}`}>
+                <span className={classesCards.cardTextSecondary}>путешествие</span>
                 <span
-                  className={`${classes.cardTextPrimary} ${classes.cardTextPrimaryGrey}`}>
+                  className={`${classesCards.cardTextPrimary} ${classesCards.cardTextPrimaryGrey}`}>
                   597
                 </span>
-                <span className={classes.cardTextSecondary}>дней</span>
+                <span className={classesCards.cardTextSecondary}>дней</span>
               </div>
             </div>
 
-            <div className={classes.startJourney}>
-              <div className={classes.button}>
-                <div className={classes.borderOne} />
-                <div className={classes.lineOne} />
+            <div className={classesStartJourney.startJourney}>
+              <div className={classesStartJourneyButton.startJourneyButton}>
+                <div className={classesStartJourneyButton.borderOne} />
+                <div className={classesStartJourneyButton.lineOne} />
                 <p>Начать путешествие</p>
-                <div className={classes.borderTwo} />
-                <div className={classes.lineTwo} />
+                <div className={classesStartJourneyButton.borderTwo} />
+                <div className={classesStartJourneyButton.lineTwo} />
               </div>
 
-              <div className={classes.arrowHorizontal}></div>
-              <div className={classes.arrowAngle}></div>
-              <div className={classes.rocket}></div>
+              <div className={classesStartJourney.arrowHorizontal}></div>
+              <div className={classesStartJourney.arrowAngle}></div>
             </div>
           </div>
         </div>

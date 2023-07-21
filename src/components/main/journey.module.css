@@ -1,0 +1,62 @@
+.journey {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 162px;
+  z-index: 2;
+}
+
+.journeyUppercase {
+  font-family: 'MuseoSansCyrl700', sans-serif;
+  font-size: 54px;
+  background: linear-gradient(to right, #ffffff 20%, #ff4005);
+}
+
+.journeyLowercase {
+  font-family: 'MuseoSansCyrl300', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  background: linear-gradient(to right, #ffffff, #ff4005);
+}
+
+.journeyUppercase,
+.journeyLowercase {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media screen and (max-width: 1107px) {
+  .journey {
+    right: 0;
+    top: 0;
+  }
+
+  .journeyUppercase {
+    font-size: 46px;
+  }
+
+  .journeyLowercase {
+    font-size: 20px;
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .journeyUppercase {
+    font-size: 40px;
+  }
+
+  .journeyLowercase {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .journeyUppercase {
+    font-size: 32px;
+  }
+  .journeyLowercase {
+    font-size: 14px;
+  }
+}

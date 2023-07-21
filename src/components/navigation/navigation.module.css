@@ -67,6 +67,7 @@
 .linksWrapper {
   background-color: #081018de;
   padding: 5px;
+  border: var(--general-border);
 }
 
 .select:hover .dropdown,

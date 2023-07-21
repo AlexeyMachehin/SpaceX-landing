@@ -1,0 +1,139 @@
+.cards {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 336px;
+  top: 135px;
+  right: 2px;
+  gap: 10px;
+  z-index: 2;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 163px;
+  height: 163px;
+}
+
+.cardTextPrimary {
+  font-family: 'MuseoSansCyrl700', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  line-height: 0.5;
+}
+
+.cardTextSecondary {
+  color: var(--font-color-2);
+}
+
+.rightTopGradient {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(189, 189, 189, 0.075) 100%
+  );
+}
+
+.rightBottomGradient {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(189, 189, 189, 0.075) 100%
+  );
+}
+
+.leftBottomGradient {
+  background: linear-gradient(
+    225deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(189, 189, 189, 0.075) 100%
+  );
+}
+
+.leftTopGradient {
+  background: linear-gradient(
+    320deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(189, 189, 189, 0.075) 100%
+  );
+}
+
+.cardTextPrimaryGrey {
+  color: #bcbcbc;
+}
+
+.startJourneyButton {
+  position: absolute;
+  top: 355px;
+  padding: 11px 24px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.arrows {
+  position: absolute;
+}
+
+.yearAbbreviation {
+  font-family: inherit;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1107px) {
+  .cards {
+    width: auto;
+    top: 251px;
+    right: 0;
+  }
+
+  .mainContent::after {
+    top: -271px;
+    left: -387px;
+  }
+
+  .mainContent::before {
+    display: none;
+  }
+
+  .cardTextPrimary {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cardTextPrimary {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .mainContent::after {
+    top: -301px;
+    left: -472px;
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 382px) {
+  .mainContent::after {
+    top: -348px;
+    left: -507px;
+    transform: scale(0.5);
+  }
+}
