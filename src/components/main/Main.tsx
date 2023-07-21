@@ -20,31 +20,43 @@ export function Main() {
             </div>
 
             <div className={classesCards.cards}>
-              <div className={`${classesCards.card} ${classesCards.rightBottomGradient}`}>
+              <div className={`${classesCards.card} ${classesCards.topLeft}`}>
                 <span className={classesCards.cardTextSecondary}>мы</span>
                 <span className={classesCards.cardTextPrimary}>1</span>
                 <span className={classesCards.cardTextSecondary}>на рынке</span>
               </div>
 
-              <div className={`${classesCards.card} ${classesCards.leftBottomGradient}`}>
-                <span className={classesCards.cardTextSecondary}>гарантируем</span>
+              <div className={`${classesCards.card} ${classesCards.topRight}`}>
+                <span className={classesCards.cardTextSecondary}>
+                  гарантируем
+                </span>
                 <span
                   className={`${classesCards.cardTextPrimary} ${classesCards.cardTextPrimaryGrey}`}>
                   50%
                 </span>
-                <span className={classesCards.cardTextSecondary}>безопасность</span>
+                <span className={classesCards.cardTextSecondary}>
+                  безопасность
+                </span>
               </div>
 
-              <div className={`${classesCards.card} ${classesCards.rightTopGradient}`}>
-                <span className={classesCards.cardTextSecondary}>календарик за</span>
+              <div
+                className={`${classesCards.card} ${classesCards.bottomLeft}`}>
+                <span className={classesCards.cardTextSecondary}>
+                  календарик за
+                </span>
                 <span className={classesCards.cardTextPrimary}>
                   2001<span className={classesCards.yearAbbreviation}>Г.</span>
                 </span>
-                <span className={classesCards.cardTextSecondary}>в подарок</span>
+                <span className={classesCards.cardTextSecondary}>
+                  в подарок
+                </span>
               </div>
 
-              <div className={`${classesCards.card} ${classesCards.leftTopGradient}`}>
-                <span className={classesCards.cardTextSecondary}>путешествие</span>
+              <div
+                className={`${classesCards.card} ${classesCards.bottomRight}`}>
+                <span className={classesCards.cardTextSecondary}>
+                  путешествие
+                </span>
                 <span
                   className={`${classesCards.cardTextPrimary} ${classesCards.cardTextPrimaryGrey}`}>
                   597
