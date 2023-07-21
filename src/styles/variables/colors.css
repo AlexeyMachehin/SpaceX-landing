@@ -1,0 +1,25 @@
+:root {
+  --border-color: #353438;
+  --font-color-1: #fff;
+  --font-color-2: #979797;
+  --arrows-border-color: #fff;
+  --start-journey-button-shadow-color: #ffffffb3;
+  --header-wrapper-background-color: #00000026;
+  --card-text-primary-darkened-color: #bcbcbc;
+  --card-hover-background-color: #bdbdbd1a;
+  --start-journey-button-background-color: #0000006a;
+  --start-journey-button-border-color: #23599c;
+  --dropdown-links-background-color: #081018de;
+  --card-background-gradient-start-color: #0000;
+  --card-background-gradient-end-color: #bdbdbd0d;
+  --card-background-gradient-start-hover-color: #0000;
+  --card-background-gradient-end-hover-color: #bdbdbd2b;
+  --card-background-border-gradient-start-color: #fff0;
+  --card-background-border-gradient-end-color: #b4b4b480;
+  --arrow-horizontal-background-gradient-start-color: #fff0;
+  --arrow-horizontal-background-gradient-end-color: #ffffff80;
+  --arrow-angle-background-gradient-start-color: #ffffff80;
+  --arrow-angle-background-gradient-end-color: #ffffff80;
+  --journey-text-background-gradient-start-color: #fff;
+  --journey-text-background-gradient-end-color: #ff4005;
+}

@@ -2,62 +2,59 @@
   display: flex;
   justify-content: center;
   border: var(--general-border);
-  background-color: rgba(0, 0, 0, 0.151);
+  background-color: var(--header-wrapper-background-color);
 }
 
-.headerContentContainer {
+.contentContainer {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
 }
 
 .logoButton {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 315px;
   height: 100px;
-  position: relative;
   border: 1px solid var(--font-color-1);
-  transition: all 0.3s ease;
   background: transparent;
-  /* box-sizing: content-box; */
+  transition: all 0.3s ease;
 }
 
-.logoButton:before,
-.logoButton:after {
-  content: '';
-  display: block;
+.logoButton::before,
+.logoButton::after {
   position: absolute;
-  background: var(--border-color);
+  content: '';
   top: 50%;
   left: 50%;
+  background: var(--border-color);
   transform: translate(-50%, -50%);
-  transform-origin: 50% 50%;
 }
 
-.logoButton:before {
+.logoButton::before {
   width: calc(100% + 2px);
   height: 80%;
-  transition: height 0.3s;
   border-left: var(--general-border);
   border-right: var(--general-border);
   background: transparent;
+  transition: height 0.3s;
 }
 
-.logoButton:after {
+.logoButton::after {
   height: calc(100% + 2px);
   width: 93%;
-  transition: width 0.3s;
   border-top: var(--general-border);
   border-bottom: var(--general-border);
   background: transparent;
+  transition: width 0.3s;
 }
-.logoButton:hover:before {
+
+.logoButton:hover::before {
   height: 0;
 }
 
-.logoButton:hover:after {
+.logoButton:hover::after {
   width: 0;
 }
 
@@ -65,7 +62,7 @@
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .logoButton {
     width: 157px;
     height: 50px;
@@ -74,13 +71,9 @@
   .logo {
     transform: scale(0.5);
   }
-
-  .headerContentContainer {
-    justify-content: space-between;
-  }
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .wrapper {
     visibility: hidden;
   }

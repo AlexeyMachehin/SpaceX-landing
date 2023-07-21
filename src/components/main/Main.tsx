@@ -6,32 +6,34 @@ import classesCards from './cards.module.css';
 
 export function Main() {
   return (
-    <main className={classes.mainWrapper}>
+    <main className={classes.wrapper}>
       <div className="container">
         <div className={classes.mainContentWrapper}>
           <div className={classes.mainContent}>
             <div className={classesJourney.journey}>
-              <span className={classesJourney.journeyUppercase}>
+              <span className={classesJourney.journeyTextUppercase}>
                 ПУТЕШЕСТВИЕ
               </span>
-              <span className={classesJourney.journeyLowercase}>
+              <span className={classesJourney.journeyTextLowercase}>
                 на красную планету
               </span>
             </div>
 
             <div className={classesCards.cards}>
-              <div className={`${classesCards.card} ${classesCards.topLeft}`}>
+              <div
+                className={`${classesCards.card} ${classesCards.topLeftCard}`}>
                 <span className={classesCards.cardTextSecondary}>мы</span>
                 <span className={classesCards.cardTextPrimary}>1</span>
                 <span className={classesCards.cardTextSecondary}>на рынке</span>
               </div>
 
-              <div className={`${classesCards.card} ${classesCards.topRight}`}>
+              <div
+                className={`${classesCards.card} ${classesCards.topRightCard}`}>
                 <span className={classesCards.cardTextSecondary}>
                   гарантируем
                 </span>
                 <span
-                  className={`${classesCards.cardTextPrimary} ${classesCards.cardTextPrimaryGrey}`}>
+                  className={`${classesCards.cardTextPrimary} ${classesCards.cardTextPrimaryDarkened}`}>
                   50%
                 </span>
                 <span className={classesCards.cardTextSecondary}>
@@ -40,7 +42,7 @@ export function Main() {
               </div>
 
               <div
-                className={`${classesCards.card} ${classesCards.bottomLeft}`}>
+                className={`${classesCards.card} ${classesCards.bottomLeftCard}`}>
                 <span className={classesCards.cardTextSecondary}>
                   календарик за
                 </span>
@@ -53,12 +55,12 @@ export function Main() {
               </div>
 
               <div
-                className={`${classesCards.card} ${classesCards.bottomRight}`}>
+                className={`${classesCards.card} ${classesCards.bottomRightCard}`}>
                 <span className={classesCards.cardTextSecondary}>
                   путешествие
                 </span>
                 <span
-                  className={`${classesCards.cardTextPrimary} ${classesCards.cardTextPrimaryGrey}`}>
+                  className={`${classesCards.cardTextPrimary} ${classesCards.cardTextPrimaryDarkened}`}>
                   597
                 </span>
                 <span className={classesCards.cardTextSecondary}>дней</span>
@@ -67,11 +69,11 @@ export function Main() {
 
             <div className={classesStartJourney.startJourney}>
               <div className={classesStartJourneyButton.startJourneyButton}>
-                <div className={classesStartJourneyButton.borderOne} />
-                <div className={classesStartJourneyButton.lineOne} />
+                <div className={classesStartJourneyButton.firstBorder} />
+                <div className={classesStartJourneyButton.firstLine} />
                 <p>Начать путешествие</p>
-                <div className={classesStartJourneyButton.borderTwo} />
-                <div className={classesStartJourneyButton.lineTwo} />
+                <div className={classesStartJourneyButton.secondBorder} />
+                <div className={classesStartJourneyButton.secondLine} />
               </div>
 
               <div className={classesStartJourney.arrowHorizontal}></div>

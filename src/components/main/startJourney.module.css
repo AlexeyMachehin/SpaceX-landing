@@ -8,64 +8,54 @@
   position: absolute;
   top: 87px;
   left: 187px;
-  width: 70px;
-  transform: rotate(45deg);
   margin-top: -50px;
   margin-right: -10px;
+  width: 70px;
   height: 1px;
+  background: var(--arrow-horizontal-background-gradient);
+  transform: rotate(45deg);
   transition: 0.3s all ease-in;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
 }
 
 .arrowAngle {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    50%,
-    rgb(255, 255, 255) 100%
-  );
-  width: 300px;
-  flex-grow: 1;
-  height: 1px;
-  transition: 0.3s all ease-in;
   position: absolute;
-  left: 247px;
   top: 62px;
+  left: 247px;
+  flex-grow: 1;
+  width: 300px;
+  height: 1px;
+  background: var(--arrow-angle-background-gradient);
+  transition: 0.3s all ease-in;
 }
 
 .arrowAngle::after {
   position: absolute;
   right: -6px;
-  transform: translateY(-50%);
-  content: '';
   height: 6px;
   width: 6px;
-  border: 1px solid #ffffff;
+  content: '';
+  border: var(--arrows-border);
   border-radius: 100%;
   background-color: transparent;
+  transform: translateY(-50%);
 }
 
 .arrowAngle::before {
   position: absolute;
-  right: -24px;
   top: 5px;
-  transform: translateY(-50%);
-  content: '';
+  right: -24px;
   height: 112px;
   width: 38px;
+  content: '';
   background: url('/rocket.png');
+  transform: translateY(-50%);
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .startJourney {
-    transform: scaleX(-1);
-    left: 332px;
     top: 111px;
+    left: 332px;
+    transform: scaleX(-1);
   }
 
   .arrowAngle {
@@ -73,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (width <= 614px) {
   .startJourney {
     left: 233px;
   }
@@ -83,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (width <= 480px) {
   .startJourney {
     left: 108px;
   }
@@ -93,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (width <= 382px) {
   .startJourney {
     left: 97px;
   }
@@ -106,7 +96,7 @@
   }
 }
 
-@media screen and (max-width: 265px) {
+@media screen and (width <= 265px) {
   .startJourney {
     left: 43px;
   }
