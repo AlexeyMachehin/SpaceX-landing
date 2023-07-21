@@ -17,7 +17,7 @@
 .mainContent::after {
   content: '';
   position: absolute;
-  left: 83px;
+  left: 86px;
   width: 980px;
   height: 724px;
   background: url('/planet.png');
@@ -28,7 +28,7 @@
   content: '';
   position: absolute;
   top: 125px;
-  left: 363px;
+  left: 365px;
   width: 383px;
   height: 383px;
   background: url('/planet2.png');
