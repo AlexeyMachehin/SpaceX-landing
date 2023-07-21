@@ -1,0 +1,299 @@
+.cards {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 336px;
+  top: 135px;
+  right: 2px;
+  gap: 10px;
+  z-index: 2;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 163px;
+  height: 163px;
+  cursor: pointer;
+}
+
+.cardTextPrimary {
+  font-family: 'MuseoSansCyrl700', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  line-height: 0.5;
+}
+
+.cardTextSecondary {
+  color: var(--font-color-2);
+}
+
+.bottomLeft {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(189, 189, 189, 0.05) 100%
+  );
+}
+
+.topLeft {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(189, 189, 189, 0.05) 100%
+  );
+}
+
+.topRight {
+  background: linear-gradient(
+    225deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(189, 189, 189, 0.05) 100%
+  );
+}
+
+.bottomRight {
+  background: linear-gradient(
+    320deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(189, 189, 189, 0.05) 100%
+  );
+}
+
+/* animate card hover */
+
+.bottomRight:hover {
+  background: linear-gradient(
+    320deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(189, 189, 189, 0.17) 100%
+  );
+}
+
+.topRight:hover {
+  background: linear-gradient(
+    225deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(189, 189, 189, 0.17) 100%
+  );
+}
+
+.topLeft:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(189, 189, 189, 0.17) 100%
+  );
+}
+
+.bottomLeft:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(189, 189, 189, 0.17) 100%
+  );
+}
+
+.cardTextPrimaryGrey {
+  color: #bcbcbc;
+}
+
+.yearAbbreviation {
+  font-family: inherit;
+  font-size: 12px;
+}
+
+/* animated border */
+
+.card::after,
+.card::before {
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  background-color: #989393;
+  transition: 0.3s all ease-out;
+}
+
+.card:hover::after,
+.card:hover::before {
+  transition: 0.3s all ease-in;
+  opacity: 1;
+}
+
+.card::after {
+  height: 100%;
+}
+
+.card::before {
+  width: 100%;
+}
+
+.topLeft::after,
+.bottomLeft::after,
+.topLeft::before,
+.bottomLeft::before {
+  left: unset;
+  right: 0;
+}
+
+.bottomRight::after,
+.bottomRight::before,
+.bottomLeft::after,
+.bottomLeft::before {
+  top: 0;
+}
+
+.bottomRight::after {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    75%,
+    rgba(180, 180, 180, 0.5) 100%
+  );
+}
+
+.bottomRight::before {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    75%,
+    rgba(180, 180, 180, 0.5) 100%
+  );
+}
+
+.topRight::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    75%,
+    rgba(180, 180, 180, 0.5) 100%
+  );
+}
+
+.topRight::before {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    75%,
+    rgba(180, 180, 180, 0.5) 100%
+  );
+}
+
+.bottomLeft::after {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    75%,
+    rgba(180, 180, 180, 0.5) 100%
+  );
+}
+
+.bottomLeft::before {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    75%,
+    rgba(180, 180, 180, 0.5) 100%
+  );
+}
+
+.topLeft::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    75%,
+    rgba(180, 180, 180, 0.5) 100%
+  );
+}
+
+.topLeft::before {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    75%,
+    rgba(180, 180, 180, 0.5) 100%
+  );
+}
+
+@media screen and (max-width: 1107px) {
+  .cards {
+    width: auto;
+    top: 251px;
+    right: 0;
+  }
+
+  .card {
+    width: 140px;
+    height: 140px;
+  }
+
+  .card:hover {
+    background: rgba(189, 189, 189, 0.1) 100%;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .card::after,
+  .card::before {
+    display: none;
+  }
+
+  .mainContent::after {
+    top: -271px;
+    left: -387px;
+  }
+
+  .mainContent::before {
+    display: none;
+  }
+
+  .cardTextPrimary {
+    font-size: 44px;
+    margin-top: 25px;
+  }
+
+  .cardTextPrimaryGrey {
+    color: inherit;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cardTextPrimary {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .mainContent::after {
+    top: -301px;
+    left: -472px;
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 382px) {
+  .mainContent::after {
+    top: -348px;
+    left: -507px;
+    transform: scale(0.5);
+  }
+}
