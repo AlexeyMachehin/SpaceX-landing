@@ -1,26 +1,26 @@
 .journey {
   position: absolute;
+  top: 162px;
   display: flex;
   flex-direction: column;
-  top: 162px;
   z-index: 2;
 }
 
-.journeyUppercase {
+.journeyTextUppercase {
+  background: linear-gradient(to right, #ffffff 20%, #ff4005);
   font-family: 'MuseoSansCyrl700', sans-serif;
   font-size: 57px;
-  background: linear-gradient(to right, #ffffff 20%, #ff4005);
 }
 
-.journeyLowercase {
+.journeyTextLowercase {
+  background: linear-gradient(to right, #ffffff, #ff4005);
   font-family: 'MuseoSansCyrl300', sans-serif;
   font-size: 23px;
   font-weight: 300;
-  background: linear-gradient(to right, #ffffff, #ff4005);
 }
 
-.journeyUppercase,
-.journeyLowercase {
+.journeyTextUppercase,
+.journeyTextLowercase {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -28,35 +28,35 @@
 
 @media screen and (max-width: 1107px) {
   .journey {
-    right: 0;
     top: 0;
+    right: 0;
   }
 
-  .journeyUppercase {
+  .journeyTextUppercase {
     font-size: 46px;
   }
 
-  .journeyLowercase {
-    font-size: 20px;
+  .journeyTextLowercase {
     text-align: end;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 614px) {
-  .journeyUppercase {
+  .journeyTextUppercase {
     font-size: 40px;
   }
 
-  .journeyLowercase {
+  .journeyTextLowercase {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .journeyUppercase {
+  .journeyTextUppercase {
     font-size: 32px;
   }
-  .journeyLowercase {
+  .journeyTextLowercase {
     font-size: 14px;
   }
 }

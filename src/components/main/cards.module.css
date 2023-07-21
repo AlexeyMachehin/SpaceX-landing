@@ -1,11 +1,11 @@
 .cards {
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  width: 336px;
   top: 135px;
   right: 2px;
   gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 336px;
   z-index: 2;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .cardTextPrimary {
+  margin-top: 30px;
+  margin-bottom: 12px;
   font-family: 'MuseoSansCyrl700', sans-serif;
   font-weight: 700;
   font-size: 50px;
-  margin-top: 30px;
-  margin-bottom: 12px;
   line-height: 0.5;
 }
 
@@ -33,7 +33,7 @@
   color: var(--font-color-2);
 }
 
-.bottomLeft {
+.bottomLeftCard {
   background: linear-gradient(
     45deg,
     rgba(0, 0, 0, 0) 0%,
@@ -41,7 +41,7 @@
   );
 }
 
-.topLeft {
+.topLeftCard {
   background: linear-gradient(
     135deg,
     rgba(0, 0, 0, 0) 0%,
@@ -49,7 +49,7 @@
   );
 }
 
-.topRight {
+.topRightCard {
   background: linear-gradient(
     225deg,
     rgba(0, 0, 0, 0) 0%,
@@ -57,7 +57,7 @@
   );
 }
 
-.bottomRight {
+.bottomRightCard {
   background: linear-gradient(
     320deg,
     rgba(0, 0, 0, 0) 0%,
@@ -67,7 +67,7 @@
 
 /* animate card hover */
 
-.bottomRight:hover {
+.bottomRightCard:hover {
   background: linear-gradient(
     320deg,
     rgba(0, 0, 0, 0) 50%,
@@ -75,7 +75,7 @@
   );
 }
 
-.topRight:hover {
+.topRightCard:hover {
   background: linear-gradient(
     225deg,
     rgba(0, 0, 0, 0) 50%,
@@ -83,7 +83,7 @@
   );
 }
 
-.topLeft:hover {
+.topLeftCard:hover {
   background: linear-gradient(
     135deg,
     rgba(0, 0, 0, 0) 50%,
@@ -91,7 +91,7 @@
   );
 }
 
-.bottomLeft:hover {
+.bottomLeftCard:hover {
   background: linear-gradient(
     45deg,
     rgba(0, 0, 0, 0) 50%,
@@ -99,7 +99,7 @@
   );
 }
 
-.cardTextPrimaryGrey {
+.cardTextPrimaryDarkened {
   color: #bcbcbc;
 }
 
@@ -112,21 +112,21 @@
 
 .card::after,
 .card::before {
-  opacity: 0;
+  position: absolute;
+  content: '';
   left: 0;
   bottom: 0;
-  content: '';
-  position: absolute;
   height: 1px;
   width: 1px;
+  opacity: 0;
   background-color: #989393;
   transition: 0.3s all ease-out;
 }
 
 .card:hover::after,
 .card:hover::before {
-  transition: 0.3s all ease-in;
   opacity: 1;
+  transition: 0.3s all ease-in;
 }
 
 .card::after {
@@ -137,22 +137,22 @@
   width: 100%;
 }
 
-.topLeft::after,
-.bottomLeft::after,
-.topLeft::before,
-.bottomLeft::before {
+.topLeftCard::after,
+.bottomLeftCard::after,
+.topLeftCard::before,
+.bottomLeftCard::before {
   left: unset;
   right: 0;
 }
 
-.bottomRight::after,
-.bottomRight::before,
-.bottomLeft::after,
-.bottomLeft::before {
+.bottomRightCard::after,
+.bottomRightCard::before,
+.bottomLeftCard::after,
+.bottomLeftCard::before {
   top: 0;
 }
 
-.bottomRight::after {
+.bottomRightCard::after {
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0) 0%,
@@ -161,7 +161,7 @@
   );
 }
 
-.bottomRight::before {
+.bottomRightCard::before {
   background: linear-gradient(
     270deg,
     rgba(255, 255, 255, 0) 0%,
@@ -170,7 +170,7 @@
   );
 }
 
-.topRight::after {
+.topRightCard::after {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -179,7 +179,7 @@
   );
 }
 
-.topRight::before {
+.topRightCard::before {
   background: linear-gradient(
     270deg,
     rgba(255, 255, 255, 0) 0%,
@@ -188,7 +188,7 @@
   );
 }
 
-.bottomLeft::after {
+.bottomLeftCard::after {
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0) 0%,
@@ -197,7 +197,7 @@
   );
 }
 
-.bottomLeft::before {
+.bottomLeftCard::before {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
@@ -206,7 +206,7 @@
   );
 }
 
-.topLeft::after {
+.topLeftCard::after {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -215,7 +215,7 @@
   );
 }
 
-.topLeft::before {
+.topLeftCard::before {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
@@ -226,9 +226,9 @@
 
 @media screen and (max-width: 1107px) {
   .cards {
-    width: auto;
     top: 251px;
     right: 0;
+    width: auto;
   }
 
   .card {
@@ -256,11 +256,11 @@
   }
 
   .cardTextPrimary {
-    font-size: 44px;
     margin-top: 25px;
+    font-size: 44px;
   }
 
-  .cardTextPrimaryGrey {
+  .cardTextPrimaryDarkened {
     color: inherit;
   }
 }
@@ -278,9 +278,9 @@
   }
 
   .cardTextPrimary {
-    font-size: 30px;
     margin-top: 20px;
     margin-bottom: 8px;
+    font-size: 30px;
   }
 
   .mainContent::after {
