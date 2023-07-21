@@ -11,7 +11,7 @@ export function Navigation() {
   ];
 
   return (
-    <div className={classes.navigationWrapper}>
+    <div className={classes.wrapper}>
       <nav className={classes.links}>
         {links.map(link => (
           <a className={classes.link} key={link.name} href="#">
@@ -22,7 +22,7 @@ export function Navigation() {
 
       <div className={classes.select}>
         <ul className={classes.dropdown}>
-          <div className={classes.linksWrapper}>
+          <div className={classes.dropdownLinksWrapper}>
             {links.map(link => (
               <li key={link.name}>
                 <a className={classes.link} href="#">

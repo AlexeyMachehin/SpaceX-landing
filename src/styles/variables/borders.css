@@ -1,0 +1,4 @@
+:root {
+  --general-border: 1px solid var(--border-color);
+  --arrows-border: 1px solid var(--arrows-border-color);
+}

@@ -1,13 +1,13 @@
 .startJourneyButton {
   position: relative;
+  padding: 10px 25px;
   width: fit-content;
   align-self: flex-start;
   white-space: nowrap;
-  background-color: rgba(0, 0, 0, 0.418);
-  color: #ffffff;
-  padding: 10px 25px;
+  background-color: var(--start-journey-button-background-color);
   font-size: 14px;
   font-weight: 100;
+  color: var(--font-color-1);
   cursor: pointer;
   transform: scaleX(-1);
 }
@@ -16,10 +16,10 @@
   transform: scaleX(-1);
 }
 
-.startJourneyButton .borderOne,
-.startJourneyButton .borderTwo,
-.startJourneyButton .lineOne,
-.startJourneyButton .lineTwo {
+.startJourneyButton .firstBorder,
+.startJourneyButton .secondBorder,
+.startJourneyButton .firstLine,
+.startJourneyButton .secondLine {
   position: absolute;
   top: 0;
   left: 0;
@@ -27,152 +27,152 @@
   height: 100%;
 }
 
-.startJourneyButton .borderOne::after,
-.startJourneyButton .borderOne::before,
-.startJourneyButton .borderTwo::after,
-.startJourneyButton .borderTwo::before {
+.startJourneyButton .firstBorder::after,
+.startJourneyButton .firstBorder::before,
+.startJourneyButton .secondBorder::after,
+.startJourneyButton .secondBorder::before {
   transition: 0.2s ease-out;
 }
 
-.startJourneyButton .borderTwo {
+.startJourneyButton .secondBorder {
   transform: rotate(180deg);
 }
 
-.startJourneyButton .borderOne::after,
-.startJourneyButton .borderTwo::after {
-  content: '';
+.startJourneyButton .firstBorder::after,
+.startJourneyButton .secondBorder::after {
   position: absolute;
+  width: 1px;
   height: 1px;
-  width: 1px;
-  background-color: #ffffff;
-}
-
-.startJourneyButton .borderOne::after {
-  width: 7px;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
-}
-
-.startJourneyButton .borderOne::before {
   content: '';
+  background-color: var(--font-color-1);
+}
+
+.startJourneyButton .firstBorder::after {
+  width: 7px;
+  box-shadow: var(--start-journey-button-shadow);
+}
+
+.startJourneyButton .firstBorder::before {
   position: absolute;
   width: 1px;
-  background-color: #ffffff;
   height: 7px;
-}
-
-.startJourneyButton .borderTwo::after {
-  width: 7px;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.7);
-}
-
-.startJourneyButton .borderTwo::before {
   content: '';
+  background-color: var(--font-color-1);
+}
+
+.startJourneyButton .secondBorder::after {
+  width: 7px;
+  box-shadow: var(--start-journey-button-shadow);
+}
+
+.startJourneyButton .secondBorder::before {
   position: absolute;
   width: 1px;
-  background-color: #ffffff;
   height: 7px;
+  content: '';
+  background-color: var(--font-color-1);
 }
 
-.startJourneyButton:hover .borderOne::after,
-.startJourneyButton:hover .borderTwo::after,
-.startJourneyButton:hover .borderOne::before,
-.startJourneyButton:hover .borderTwo::before {
+.startJourneyButton:hover .firstBorder::after,
+.startJourneyButton:hover .secondBorder::after,
+.startJourneyButton:hover .firstBorder::before,
+.startJourneyButton:hover .secondBorder::before {
   transition: 0.3s ease-in-out;
 }
 
-.startJourneyButton:hover .borderOne::after,
-.startJourneyButton:hover .borderTwo::after {
+.startJourneyButton:hover .firstBorder::after,
+.startJourneyButton:hover .secondBorder::after {
   width: 100%;
 }
 
-.startJourneyButton:hover .borderOne::before,
-.startJourneyButton:hover .borderTwo::before {
+.startJourneyButton:hover .firstBorder::before,
+.startJourneyButton:hover .secondBorder::before {
   height: 100%;
 }
 
-.startJourneyButton .lineOne::after,
-.startJourneyButton .lineOne::before,
-.startJourneyButton .lineTwo::after,
-.startJourneyButton .lineTwo::before {
-  opacity: 0.8;
+.startJourneyButton .firstLine::after,
+.startJourneyButton .firstLine::before,
+.startJourneyButton .secondLine::after,
+.startJourneyButton .secondLine::before {
+  position: absolute;
   left: 0;
   bottom: 0;
-  content: '';
-  position: absolute;
-  height: 1px;
   width: 1px;
-  background-color: #23599c;
+  height: 1px;
+  content: '';
+  opacity: 0.8;
+  background-color: var(--start-journey-button-border-color);
   transition: 0.3s all ease-out;
 }
 
-.startJourneyButton:hover .lineOne::after,
-.startJourneyButton:hover .lineOne::before,
-.startJourneyButton:hover .lineTwo::after,
-.startJourneyButton:hover .lineTwo::before {
-  transition: 0.3s all ease-in;
-  opacity: 0;
-}
-
-.startJourneyButton .lineOne::after,
-.startJourneyButton .lineTwo::after {
+.startJourneyButton .firstLine::after,
+.startJourneyButton .secondLine::after {
   height: 100%;
 }
 
-.startJourneyButton .lineOne::before,
-.startJourneyButton .lineTwo::before {
+.startJourneyButton .firstLine::before,
+.startJourneyButton .secondLine::before {
   width: 100%;
 }
 
-.startJourneyButton .lineTwo::before,
-.startJourneyButton .lineTwo::after {
-  left: unset;
-  right: 0;
+.startJourneyButton .secondLine::before,
+.startJourneyButton .secondLine::after {
   top: 0;
+  right: 0;
+  left: unset;
 }
 
-.startJourneyButton .lineOne::after {
+.startJourneyButton .firstLine::after {
   background: linear-gradient(
     175deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     40%,
-    #24599c 100%
+    var(--start-journey-button-border-color) 100%
   );
 }
 
-.startJourneyButton .lineOne::before {
+.startJourneyButton .firstLine::before {
   background: linear-gradient(
     270deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     40%,
-    #24599c 100%
+    var(--start-journey-button-border-color) 100%
   );
 }
 
-.startJourneyButton .lineTwo::after {
+.startJourneyButton .secondLine::after {
   background: linear-gradient(
     360deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     40%,
-    #24599c 100%
+    var(--start-journey-button-border-color) 100%
   );
 }
 
-.startJourneyButton .lineTwo::before {
+.startJourneyButton .secondLine::before {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
+    rgb(255 255 255 / 0%) 0%,
     40%,
-    #24599c 100%
+    var(--start-journey-button-border-color) 100%
   );
 }
 
-@media screen and (max-width: 1107px) {
+.startJourneyButton:hover .firstLine::after,
+.startJourneyButton:hover .firstLine::before,
+.startJourneyButton:hover .secondLine::after,
+.startJourneyButton:hover .secondLine::before {
+  opacity: 0;
+  transition: 0.3s all ease-in;
+}
+
+@media screen and (width <= 1107px) {
   .startJourneyButton p {
     transform: scaleX(1);
   }
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (width <= 382px) {
   .startJourneyButton {
     padding: 5px;
   }

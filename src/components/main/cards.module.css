@@ -1,11 +1,11 @@
 .cards {
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  width: 336px;
   top: 135px;
   right: 2px;
   gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 336px;
   z-index: 2;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .cardTextPrimary {
+  margin-top: 30px;
+  margin-bottom: 12px;
   font-family: 'MuseoSansCyrl700', sans-serif;
   font-weight: 700;
   font-size: 50px;
-  margin-top: 30px;
-  margin-bottom: 12px;
   line-height: 0.5;
 }
 
@@ -33,74 +33,42 @@
   color: var(--font-color-2);
 }
 
-.bottomLeft {
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(189, 189, 189, 0.05) 100%
-  );
+.bottomLeftCard {
+  background: var(--bottom-left-card-gradient);
 }
 
-.topLeft {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(189, 189, 189, 0.05) 100%
-  );
+.topLeftCard {
+  background: var(--top-left-card-gradient);
 }
 
-.topRight {
-  background: linear-gradient(
-    225deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(189, 189, 189, 0.05) 100%
-  );
+.topRightCard {
+  background: var(--top-right-card-gradient);
 }
 
-.bottomRight {
-  background: linear-gradient(
-    320deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(189, 189, 189, 0.05) 100%
-  );
+.bottomRightCard {
+  background: var(--bottom-right-card-gradient);
 }
 
 /* animate card hover */
 
-.bottomRight:hover {
-  background: linear-gradient(
-    320deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(189, 189, 189, 0.17) 100%
-  );
+.bottomRightCard:hover {
+  background: var(--bottom-right-card-hover-gradient);
 }
 
-.topRight:hover {
-  background: linear-gradient(
-    225deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(189, 189, 189, 0.17) 100%
-  );
+.topRightCard:hover {
+  background: var(--top-right-card-hover-gradient);
 }
 
-.topLeft:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(189, 189, 189, 0.17) 100%
-  );
+.topLeftCard:hover {
+  background: var(--top-left-card-hover-gradient);
 }
 
-.bottomLeft:hover {
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(189, 189, 189, 0.17) 100%
-  );
+.bottomLeftCard:hover {
+  background: var(--bottom-left-card-hover-gradient);
 }
 
-.cardTextPrimaryGrey {
-  color: #bcbcbc;
+.cardTextPrimaryDarkened {
+  color: var(--card-text-primary-darkened-color);
 }
 
 .yearAbbreviation {
@@ -112,21 +80,14 @@
 
 .card::after,
 .card::before {
-  opacity: 0;
+  position: absolute;
+  content: '';
   left: 0;
   bottom: 0;
-  content: '';
-  position: absolute;
   height: 1px;
   width: 1px;
-  background-color: #989393;
+  opacity: 0;
   transition: 0.3s all ease-out;
-}
-
-.card:hover::after,
-.card:hover::before {
-  transition: 0.3s all ease-in;
-  opacity: 1;
 }
 
 .card::after {
@@ -137,98 +98,64 @@
   width: 100%;
 }
 
-.topLeft::after,
-.bottomLeft::after,
-.topLeft::before,
-.bottomLeft::before {
+.card:hover::after,
+.card:hover::before {
+  opacity: 1;
+  transition: 0.3s all ease-in;
+}
+
+.topLeftCard::after,
+.bottomLeftCard::after,
+.topLeftCard::before,
+.bottomLeftCard::before {
   left: unset;
   right: 0;
 }
 
-.bottomRight::after,
-.bottomRight::before,
-.bottomLeft::after,
-.bottomLeft::before {
+.bottomRightCard::after,
+.bottomRightCard::before,
+.bottomLeftCard::after,
+.bottomLeftCard::before {
   top: 0;
 }
 
-.bottomRight::after {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(180, 180, 180, 0.5) 100%
-  );
+.bottomRightCard::after {
+  background: var(--card-bottom-right-background-border-after-gradient);
 }
 
-.bottomRight::before {
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(180, 180, 180, 0.5) 100%
-  );
+.bottomRightCard::before {
+  background: var(--card-bottom-right-background-border-before-gradient);
 }
 
-.topRight::after {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(180, 180, 180, 0.5) 100%
-  );
+.topRightCard::after {
+  background: var(--card-top-right-background-border-after-gradient);
 }
 
-.topRight::before {
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(180, 180, 180, 0.5) 100%
-  );
+.topRightCard::before {
+  background: var(--card-top-right-background-border-before-gradient);
 }
 
-.bottomLeft::after {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(180, 180, 180, 0.5) 100%
-  );
+.bottomLeftCard::after {
+  background: var(--card-bottom-left-background-border-after-gradient);
 }
 
-.bottomLeft::before {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(180, 180, 180, 0.5) 100%
-  );
+.bottomLeftCard::before {
+  background: var(--card-bottom-left-background-border-before-gradient);
 }
 
-.topLeft::after {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(180, 180, 180, 0.5) 100%
-  );
+.topLeftCard::after {
+  background: var(--card-top-left-background-border-after-gradient);
 }
 
-.topLeft::before {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    75%,
-    rgba(180, 180, 180, 0.5) 100%
-  );
+.topLeftCard::before {
+  background: var(--card-top-left-background-border-before-gradient);
 }
 
-@media screen and (max-width: 1107px) {
+@media screen and (width <= 1107px) {
   .cards {
-    width: auto;
     top: 251px;
     right: 0;
+    width: auto;
   }
 
   .card {
@@ -237,7 +164,7 @@
   }
 
   .card:hover {
-    background: rgba(189, 189, 189, 0.1) 100%;
+    background: var(--card-hover-background-color);
     transition: 0.3s all ease-in-out;
   }
 
@@ -256,31 +183,31 @@
   }
 
   .cardTextPrimary {
-    font-size: 44px;
     margin-top: 25px;
+    font-size: 44px;
   }
 
-  .cardTextPrimaryGrey {
+  .cardTextPrimaryDarkened {
     color: inherit;
   }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (width <= 725px) {
   .cards {
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 614px) {
+@media screen and (width <= 614px) {
   .card {
     width: 120px;
     height: 120px;
   }
 
   .cardTextPrimary {
-    font-size: 30px;
     margin-top: 20px;
     margin-bottom: 8px;
+    font-size: 30px;
   }
 
   .mainContent::after {
@@ -290,7 +217,7 @@
   }
 }
 
-@media screen and (max-width: 382px) {
+@media screen and (width <= 382px) {
   .mainContent::after {
     top: -348px;
     left: -507px;

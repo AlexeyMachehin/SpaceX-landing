@@ -1,0 +1,112 @@
+:root {
+  --journey-text-uppercase-background-gradient: linear-gradient(
+    to right,
+    var(--journey-text-background-gradient-start-color) 20%,
+    var(--journey-text-background-gradient-end-color)
+  );
+  --journey-text-lowercase-background-gradient: linear-gradient(
+    to right,
+    var(--journey-text-background-gradient-start-color) 10%,
+    var(--journey-text-background-gradient-end-color)
+  );
+  --arrow-horizontal-background-gradient: linear-gradient(
+    135deg,
+    var(--arrow-horizontal-background-gradient-start-color),
+    75%,
+    var(--arrow-horizontal-background-gradient-end-color)
+  );
+  --arrow-angle-background-gradient: linear-gradient(
+    90deg,
+    var(--arrow-angle-background-gradient-start-color),
+    50%,
+    var(--arrow-angle-background-gradient-end-color)
+  );
+  --bottom-left-card-gradient: linear-gradient(
+    45deg,
+    var(--card-background-gradient-start-color),
+    var(--card-background-gradient-end-color)
+  );
+  --top-left-card-gradient: linear-gradient(
+    135deg,
+    var(--card-background-gradient-start-color),
+    var(--card-background-gradient-end-color)
+  );
+  --top-right-card-gradient: linear-gradient(
+    225deg,
+    var(--card-background-gradient-start-color),
+    var(--card-background-gradient-end-color)
+  );
+  --bottom-right-card-gradient: linear-gradient(
+    320deg,
+    var(--card-background-gradient-start-color),
+    var(--card-background-gradient-end-color)
+  );
+  --bottom-right-card-hover-gradient: linear-gradient(
+    320deg,
+    var(--card-background-gradient-start-hover-color),
+    var(--card-background-gradient-end-hover-color)
+  );
+  --top-right-card-hover-gradient: linear-gradient(
+    225deg,
+    var(--card-background-gradient-start-hover-color),
+    var(--card-background-gradient-end-hover-color)
+  );
+  --top-left-card-hover-gradient: linear-gradient(
+    135deg,
+    var(--card-background-gradient-start-hover-color),
+    var(--card-background-gradient-end-hover-color)
+  );
+  --bottom-left-card-hover-gradient: linear-gradient(
+    45deg,
+    var(--card-background-gradient-start-hover-color),
+    var(--card-background-gradient-end-hover-color)
+  );
+  --card-bottom-right-background-border-after-gradient: linear-gradient(
+    0deg,
+    var(--card-background-border-gradient-start-color),
+    75%,
+    var(--card-background-border-gradient-end-color)
+  );
+  --card-bottom-right-background-border-before-gradient: linear-gradient(
+    270deg,
+    var(--card-background-border-gradient-start-color),
+    75%,
+    var(--card-background-border-gradient-end-color)
+  );
+  --card-top-right-background-border-after-gradient: linear-gradient(
+    180deg,
+    var(--card-background-border-gradient-start-color),
+    75%,
+    var(--card-background-border-gradient-end-color)
+  );
+  --card-top-right-background-border-before-gradient: linear-gradient(
+    270deg,
+    var(--card-background-border-gradient-start-color),
+    75%,
+    var(--card-background-border-gradient-end-color)
+  );
+  --card-bottom-left-background-border-after-gradient: linear-gradient(
+    0deg,
+    var(--card-background-border-gradient-start-color),
+    75%,
+    var(--card-background-border-gradient-end-color)
+  );
+  --card-bottom-left-background-border-before-gradient: linear-gradient(
+    90deg,
+    var(--card-background-border-gradient-start-color),
+    75%,
+    var(--card-background-border-gradient-end-color)
+  );
+  --card-top-left-background-border-after-gradient: linear-gradient(
+    180deg,
+    var(--card-background-border-gradient-start-color),
+    75%,
+    var(--card-background-border-gradient-end-color)
+  );
+  --card-top-left-background-border-before-gradient: linear-gradient(
+    90deg,
+    var(--card-background-border-gradient-start-color),
+    75%,
+    var(--card-background-border-gradient-end-color)
+  );
+}
