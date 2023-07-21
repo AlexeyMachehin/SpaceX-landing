@@ -1,0 +1,64 @@
+.mainWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContent {
+  position: relative;
+  width: 100%;
+}
+
+.mainContent::after {
+  content: '';
+  position: absolute;
+  left: 86px;
+  width: 980px;
+  height: 724px;
+  background: url('/planet.png');
+  background-repeat: no-repeat;
+}
+
+.mainContent::before {
+  content: '';
+  position: absolute;
+  top: 125px;
+  left: 365px;
+  width: 383px;
+  height: 383px;
+  background: url('/planet2.png');
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1107px) {
+  .mainContent::after {
+    top: -271px;
+    left: -387px;
+  }
+
+  .mainContent::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .mainContent::after {
+    top: -301px;
+    left: -472px;
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 382px) {
+  .mainContent::after {
+    top: -348px;
+    left: -507px;
+    transform: scale(0.5);
+  }
+}
