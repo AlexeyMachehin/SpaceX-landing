@@ -33,7 +33,8 @@
 }
 
 .logoButton::before {
-  width: calc(100% + 2px);
+  left: 156px;
+  width: 316px;
   height: 80%;
   border-left: var(--general-border);
   border-right: var(--general-border);
@@ -42,7 +43,7 @@
 }
 
 .logoButton::after {
-  height: calc(100% + 2px);
+  height: 100px;
   width: 93%;
   border-top: var(--general-border);
   border-bottom: var(--general-border);
