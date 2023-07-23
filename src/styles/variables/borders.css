@@ -1,5 +1,6 @@
 :root {
   --general-border: 1px solid var(--border-color);
+  --logo-border: 2px solid var(--border-color);
   --arrows-border: 1px solid var(--arrows-border-color);
   --logo-button-border: 1px solid var(--font-color-1);
 }
