@@ -36,8 +36,8 @@
   left: 156px;
   width: 316px;
   height: 80%;
-  border-left: var(--general-border);
-  border-right: var(--general-border);
+  border-left: var(--logo-border);
+  border-right: var(--logo-border);
   background: var(--logo-button-background-color);
   transition: height 0.3s;
 }
