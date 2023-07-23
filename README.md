@@ -45,7 +45,7 @@
 ***
 
 Превью:
-![image](https://github.com/AlexeyMachehin/SpaceX-landing/assets/99137228/bb1dfc1c-a671-4b4e-9906-722b6f5e235c)
+![image](https://github.com/AlexeyMachehin/SpaceX-landing/assets/99137228/e97e99df-12b7-450d-a725-c578c35ac734)
 
 ***
 
