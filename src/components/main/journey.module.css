@@ -6,14 +6,33 @@
   z-index: 2;
 }
 
-.journeyTextUppercase {
+/* .journeyTextUppercase {
   background: var(--journey-text-uppercase-background-gradient);
+  font-family: var(--bold-font);
+  font-size: 57px;
+} */
+
+.journeyTextUppercase {
+  background-image: var(--journey-text-uppercase-background-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-family: var(--bold-font);
   font-size: 57px;
 }
 
-.journeyTextLowercase {
+/* .journeyTextLowercase {
   background: var(--journey-text-lowercase-background-gradient);
+  font-family: var(--regular-font);
+  font-size: 23px;
+  font-weight: 300;
+} */
+
+.journeyTextLowercase {
+  background-image: var(--journey-text-lowercase-background-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-family: var(--regular-font);
   font-size: 23px;
   font-weight: 300;
