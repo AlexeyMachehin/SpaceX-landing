@@ -47,8 +47,15 @@
   background-color: var(--font-color-1);
 }
 
+/* .startJourneyButton .firstBorder::after {
+  width: 7px;
+  box-shadow: var(--start-journey-button-shadow);
+} */
+
 .startJourneyButton .firstBorder::after {
   width: 7px;
+  -webkit-box-shadow: var(--start-journey-button-shadow);
+  -moz-box-shadow: var(--start-journey-button-shadow);
   box-shadow: var(--start-journey-button-shadow);
 }
 
